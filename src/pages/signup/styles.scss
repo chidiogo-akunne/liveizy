@@ -1,0 +1,60 @@
+@import '../../variables.scss';
+
+.title{
+    font-size: 30px;
+    color: $input-color;
+    font-family: $openSans;
+    margin: 2rem 0 1rem;
+    text-transform: uppercase;
+}
+
+.signin{
+    font-size: 15px;
+    color: $input-color;
+    font-family: $openSans; 
+    a{
+        text-decoration: underline;
+        color: $link-color;
+    }
+}
+
+form{
+    margin-top: 2rem;
+    .buttonClass{
+        padding: 0.5rem 2rem;
+        margin: 2rem 0 1rem;
+        display: block;
+    }
+    .terms{
+       font-size: 14px;
+       font-family: $openSans;
+       color: $input-color;
+       a{
+           color: $link-color;
+           text-decoration: underline;
+       }
+    }
+    @media (min-width: 1024px){
+        width: 60%;
+        .buttonClass{
+            margin: 0.6rem 0;
+        }
+        .input_row{
+            display: flex;
+            justify-content: space-between;
+            .input_class{
+                width: 100%;
+            }
+        }
+        .referral_input{
+            width: 40%;
+            margin-bottom: 1rem;
+        }
+        .terms{
+            width: 50%;
+        }
+        .buttonClass{
+            margin-bottom: 2rem;
+        }
+    }
+}
