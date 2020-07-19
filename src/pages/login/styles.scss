@@ -1,10 +1,10 @@
 @import '../../variables.scss';
 
 .title{
-    font-size: 30px;
+    font-size: 26px;
     color: $input-color;
     font-family: $openSans;
-    margin: 2rem 0 1rem;
+    margin: 1rem 0 0.5rem;
     text-transform: uppercase;
 }
 
@@ -25,7 +25,7 @@ form{
        font-size: 14px;
        font-family: $openSans;
        color: $input-color;
-       .account{
+       a{
            color: $link-color;
            text-decoration: underline;
        }
