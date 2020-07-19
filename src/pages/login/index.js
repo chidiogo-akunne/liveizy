@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 import Layout from '../../components/layout';
 import Input from '../../commons/input';
@@ -33,8 +34,7 @@ export default function Login(){
            <Input placeholder="password" label="Password" name="password" value={password} type="password" onChange={handleChange} /> 
            <p className="forgot">forgot password?</p>
            <Button buttonClass="buttonClass">Login</Button>
-           <p className="create">Need a Liveizy account? <span className="account">
-               Create an account</span></p>
+           <p className="create">Need a Liveizy account? <Link to="/signup">Create an account</Link></p>
            </form>
         </Layout>
     )
